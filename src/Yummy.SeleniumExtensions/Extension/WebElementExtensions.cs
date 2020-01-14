@@ -4,6 +4,12 @@ namespace Yummy.SeleniumExtensions
 {
   public static class WebElementExtensions
   {
+    /// <summary>
+    /// Check for image is loaded correctly
+    /// </summary>
+    /// <param name="element">WebElement</param>
+    /// <param name="driver">Selenium Driver</param>
+    /// <returns>If image loaded returns true otherwise returns false</returns>
     public static bool IsImageLoaded(this IWebElement element, IWebDriver driver)
     {
       Object result = ((IJavaScriptExecutor)driver).ExecuteScript(
